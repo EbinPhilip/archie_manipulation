@@ -53,11 +53,11 @@
   <depend>shape_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>control_msgs</depend>
-  <depend>yolo_object_recognition</depend>
+  <!-- <depend>yolo_object_recognition</depend>
   <depend>pcl_object_extraction</depend>
   <depend>sting_gripper_action</depend>
   <depend>rospy</depend>
-  <depend>dynamic_reconfigure</depend>
+  <depend>dynamic_reconfigure</depend> -->
   <build_depend>message_generation</build_depend>
   <exec_depend>message_runtime</exec_depend>
 

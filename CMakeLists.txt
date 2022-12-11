@@ -59,11 +59,11 @@ find_package(catkin REQUIRED
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  Pick.srv
+  Place.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -73,10 +73,10 @@ find_package(catkin REQUIRED
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs  # Or other packages containing msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -110,7 +110,10 @@ find_package(catkin REQUIRED
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES archie_manipulation
-#  CATKIN_DEPENDS other_catkin_pkg
+ CATKIN_DEPENDS
+    rospy
+    std_msgs
+    sensor_msgs
 #  DEPENDS system_lib
 )
 
